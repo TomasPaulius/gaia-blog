@@ -153,6 +153,15 @@ nav.solid .hamburger span, body.nav-solid nav .hamburger span { background: var(
 .j-table td:first-child, .j-table th:first-child { font-weight: 500; color: var(--forest); }
 .table-note { font-size: 0.8rem; color: var(--text-light); font-style: italic; margin: -32px 0 44px; }
 
+/* data box (top-of-article structured summary, AEO-friendly) */
+.data-box { border: 1px solid var(--gold); background: var(--white); margin: 8px 0 48px; }
+.data-box-head { background: var(--forest); color: var(--white); font-family: 'Jost', sans-serif; font-weight: 500; font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase; padding: 14px 22px; }
+.data-box dl { margin: 0; display: grid; grid-template-columns: 1fr 1fr; }
+.data-box dl > div { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 14px 22px; border-bottom: 1px solid var(--sand-dark); border-right: 1px solid var(--sand-dark); }
+.data-box dt { color: var(--text-light); font-size: 0.92rem; line-height: 1.4; }
+.data-box dd { color: var(--forest); font-weight: 500; font-size: 0.95rem; margin: 0; text-align: right; white-space: nowrap; }
+@media (max-width: 680px) { .data-box dl { grid-template-columns: 1fr; } .data-box dl > div { border-right: none; } }
+
 /* key takeaways box */
 .key-box { background: var(--sand); border-left: 3px solid var(--gold); padding: 28px 32px; margin: 48px 0; }
 .key-box h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: var(--forest); margin-bottom: 16px; }
