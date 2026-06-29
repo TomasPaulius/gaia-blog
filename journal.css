@@ -122,8 +122,11 @@ nav.solid .hamburger span, body.nav-solid nav .hamburger span { background: var(
 .article { background: var(--white); }
 .article-inner { max-width: var(--measure); margin: 0 auto; padding: 96px 24px 104px; }
 .lede { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.5rem, 2.4vw, 1.8rem); font-weight: 300; font-style: italic; line-height: 1.55; color: var(--forest); margin-bottom: 48px; }
-.byline { font-size: 0.82rem; color: var(--text-light); letter-spacing: 0.02em; margin: 0 0 34px; padding-bottom: 22px; border-bottom: 1px solid var(--sand-dark); }
-.byline strong { color: var(--forest); font-weight: 500; }
+.byline { display: flex; align-items: center; gap: 14px; margin: 0 0 36px; padding-bottom: 24px; border-bottom: 1px solid var(--sand-dark); }
+.byline-avatar { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; background: var(--forest); }
+.byline-text { display: flex; flex-direction: column; line-height: 1.45; }
+.byline-name { font-size: 0.96rem; font-weight: 500; color: var(--forest); }
+.byline-meta { font-size: 0.8rem; color: var(--text-light); letter-spacing: 0.01em; }
 .article-inner p { font-size: 1.2rem; line-height: 1.85; color: var(--text); margin-bottom: 30px; letter-spacing: 0.002em; }
 .article-inner p.first::first-letter { font-family: 'Cormorant Garamond', serif; font-size: 4.2em; line-height: 0.74; float: left; color: var(--gold-deep); font-weight: 500; margin: 8px 14px -6px 0; }
 .article-inner h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.2vw, 2.5rem); font-weight: 400; color: var(--forest); line-height: 1.2; margin: 66px 0 24px; }
