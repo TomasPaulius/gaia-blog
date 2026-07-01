@@ -56,8 +56,14 @@
   }
 
   /* ---- editorial drop cap on first body paragraph ---- */
-  const firstPara = document.querySelector('.article-inner p:not(.lede)');
-  if (firstPara) firstPara.classList.add('first');
+  const inner = document.querySelector('.article-inner');
+  if (inner) {
+    const firstH2 = inner.querySelector('h2');
+    const cands = [...inner.querySelectorAll('p:not(.lede):not(.disclaimer)')];
+    // drop cap only on a genuine opening paragraph (before the first section heading)
+    const intro = cands.find(p => !firstH2 || (p.compareDocumentPosition(firstH2) & Node.DOCUMENT_POSITION_FOLLOWING));
+    if (intro) intro.classList.add('first');
+  }
 
   /* ---- auto-tag content blocks for scroll reveal ---- */
   const revealSelectors = [
