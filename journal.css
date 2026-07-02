@@ -77,7 +77,7 @@ nav.solid .hamburger span, body.nav-solid nav .hamburger span { background: var(
 .j-section { padding: 96px 48px; }
 .featured { background: var(--white); display: grid; grid-template-columns: 1.12fr 1fr; gap: 0; align-items: stretch; margin-top: 8px; border: 1px solid var(--sand-dark); overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow 0.45s ease, border-color 0.45s ease; }
 .featured:hover { box-shadow: 0 26px 60px rgba(44,59,45,0.13); border-color: rgba(201,169,110,0.4); }
-.featured-img { min-height: 460px; background-image: url('journal-construction.jpg'); background-size: cover; background-position: center; transition: transform 0.8s ease; }
+.featured-img { min-height: 460px; background-image: url('gaia-construction-real.jpg'); background-size: cover; background-position: center; transition: transform 0.8s ease; }
 .featured:hover .featured-img { transform: scale(1.05); }
 .featured-body { padding: 60px 56px; display: flex; flex-direction: column; justify-content: center; }
 .featured:hover .read-link { gap: 16px; color: var(--gold-deep); }
